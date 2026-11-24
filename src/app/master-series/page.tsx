@@ -32,6 +32,7 @@ export default function MasterSeries() {
           src={MasterSeriesBanner1}
           alt="Master Series"
           priority
+          loading="eager"
           className=" w-full h-full object-cover object-center"
         />
       </header>
@@ -72,6 +73,7 @@ export default function MasterSeries() {
                 src={banner}
                 alt={`${name} ${index + 1}`}
                 sizes="100vw"
+                loading="eager"
                 className="image w-full h-full object-cover object-center"
               />
             </div>
