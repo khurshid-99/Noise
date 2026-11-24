@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import Nav from "@/client/components/nav/Nav";
+import Footer from "@/client/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Noise",
@@ -9,12 +10,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={` h-full antialiased`}
-    >
+    <html lang="en" className={` h-full antialiased`}>
       <body cz-shortcut-listen="true" className="min-h-full flex flex-col">
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

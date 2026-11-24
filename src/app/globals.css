@@ -36,22 +36,27 @@
   --font-Ucc: Ucc;
 
   /* FONT SIZE */
-  --text-14: 1.4rem; /* 14px */
-  --text-12-88: 1.288rem; /* 12.88px */
   --text-30: 3rem; /* 30px */
-  --text-10: 1rem; /* 10px */
+  --text-26: 2.6rem; /* 26px */
+  --text-22: 2.2rem; /* 22px */
   --text-18: 1.8rem; /* 18px */
+  --text-16: 1.6rem; /* 16px */
+  --text-14: 1.4rem; /* 14px */
   --text-14-5: 1.45rem; /* 14.5px */
   --text-13: 1.3rem; /* 13px */
+  --text-12-88: 1.288rem; /* 12.88px */
   --text-12: 1.2rem; /* 12px */
+  --text-10: 1rem; /* 10px */
 
   /* COLOR */
   --color-white: #ffffff;
+  --color-white-2: #ffffff1f;
   --color-black: #000000;
   --color-green: #107629;
   --color-gray-1: #a7a7a7;
   --color-gray-2: #757575;
   --color-dark-1: #171717;
+  --color-dark-5: #070707a6;
   --color-light-gray: #f2f2f2;
   --color-dark-2: #353535;
   --color-gray-3: #3e3e3e;
@@ -59,6 +64,7 @@
   --color-dark-4: #050503;
   --color-gray-4: #8c8c8c;
   --color-gray-5: #c9c9c9;
+  --color-gray-6: #747474;
 
   /* RADIUS */
   --radius-50p: 5rem; /* 50px */
@@ -69,32 +75,44 @@
   /* -- */
 
   --spacing-1790p: 179rem; /* 1790px */
+  --spacing-280p: 28rem; /* 280px */
+  --spacing-262p: 26.2rem; /* 262px */
+  --spacing-260p: 26rem; /* 260px */
+  --spacing-162p: 16.2rem; /* 162px */
   --spacing-130p: 13rem; /* 130px */
   --spacing-120p: 12rem; /* 120px */
   --spacing-115p: 11.5rem; /* 115px */
+  --spacing-107p: 10.7rem; /* 107px */
   --spacing-96p: 9.6rem; /* 96px */
   --spacing-75p: 7.5rem; /* 75px */
   --spacing-55p: 5.5rem; /* 55px */
   --spacing-52p: 5.2rem; /* 52px */
+  --spacing-50p: 5rem; /* 50px */
   --spacing-45p: 4.5rem; /* 45px */
   --spacing-38p: 3.8rem; /* 38px */
   --spacing-35p: 3.5rem; /* 35px */
   --spacing-32p: 3.2rem; /* 32px */
   --spacing-30p: 3rem; /* 30px */
+  --spacing-26p: 2.6rem; /* 26px */
   --spacing-25p: 2.5rem; /* 25px */
   --spacing-24p: 2.4rem; /* 24px */
   --spacing-22p: 2.2rem; /* 22px */
   --spacing-20p: 2rem; /* 20px */
+  --spacing-19p: 1.9rem; /* 19px */
   --spacing-18p: 1.8rem; /* 18px */
   --spacing-16p: 1.6rem; /* 16px */
   --spacing-14p: 1.4rem; /* 14px */
   --spacing-12p: 1.2rem; /* 12px */
+  --spacing-11p: 1.1rem; /* 11px */
   --spacing-10p: 1rem; /* 10px */
+  --spacing-9p: 0.9rem; /* 9px */
   --spacing-8p: 0.8rem; /* 8px */
   --spacing-7p: 0.7rem; /* 7px */
   --spacing-6p: 0.6rem; /* 6px */
   --spacing-5p: 0.5rem; /* 5px */
   --spacing-4p: 0.4rem; /* 4px */
+  --spacing-3p: 0.3rem; /* 3px */
+  --spacing-2p: 0.2rem; /* 2px */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -113,4 +131,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+::-webkit-scrollbar{
+  /* width: 5px; */
+  display: none;
+  /* background: red; */
 }

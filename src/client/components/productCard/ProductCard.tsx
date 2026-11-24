@@ -4,8 +4,8 @@ import { GigtIcon, OfferLogo, ProductCardImage1 } from "@/Images";
 
 const ProductCard = () => {
   return (
-    <div className="w-[280px] aspect-280/460 p-10p rounded-16p bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.15)]">
-      <div className="relative w-[260px] aspect-260/269 p-10p  rounded-8p bg-light-gray ">
+    <div className="w-280p aspect-280/460 p-10p rounded-16p bg-white shadow-[0_3px_6px_0_rgba(0,0,0,0.15)]">
+      <div className="relative w-260p aspect-260/269 p-10p  rounded-8p bg-light-gray ">
         <Image
           src={ProductCardImage1}
           alt=" "
@@ -16,7 +16,7 @@ const ProductCard = () => {
 
         {/*  */}
 
-        <div className="absolute top-10p left-10p flex items-center gap-[2px] w-fit rounded-50p px-10p py-4p bg-black ">
+        <div className="absolute top-10p left-10p flex items-center gap-2p w-fit rounded-50p px-10p py-4p bg-black ">
           <Image
             src={GigtIcon}
             alt=""
@@ -57,7 +57,7 @@ const ProductCard = () => {
         {/*  */}
         <div>
           <span className="text-10 text-dark-1 leading-4 ">
-            Rotating Bezel | 1.43" AMOLED Display
+            Rotating Bezel | 1.43&rdquo; AMOLED Display
           </span>
         </div>
         {/*  */}

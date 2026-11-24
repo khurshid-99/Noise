@@ -178,3 +178,75 @@ export const YoutubeIcon = () => {
     </svg>
   );
 };
+
+export const SearchIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M18.3422 18.3422L14.4029 14.3959M16.5859 9.12182C16.5859 13.2441 13.2441 16.5859 9.12182 16.5859C4.99951 16.5859 1.65772 13.2441 1.65771 9.12182C1.65771 4.99951 4.99951 1.65771 9.12182 1.65771C13.2441 1.65771 16.5859 4.99951 16.5859 9.12182Z"
+        stroke="#fff"
+        strokeWidth={1.8}
+        strokeLinecap="round"
+      ></path>
+    </svg>
+  );
+};
+
+export const AccountIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+    >
+      <path
+        d="M10.0007 9.99984C12.3018 9.99984 14.1673 8.13436 14.1673 5.83317C14.1673 3.53198 12.3018 1.6665 10.0007 1.6665C7.69946 1.6665 5.83398 3.53198 5.83398 5.83317C5.83398 8.13436 7.69946 9.99984 10.0007 9.99984Z"
+        stroke="white"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M17.1585 18.3333C17.1585 15.1083 13.9501 12.5 10.0001 12.5C6.05013 12.5 2.8418 15.1083 2.8418 18.3333"
+        stroke="white"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+    </svg>
+  );
+};
+
+export const CartIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+    >
+      <path
+        d="M6.32373 6.75317H20.0286C20.5901 6.75317 21.1254 6.99071 21.5023 7.40707C21.8791 7.8235 22.0622 8.37983 22.0063 8.9386L21.41 14.9016C21.3084 15.9176 20.4534 16.6914 19.4323 16.6914H9.94126C8.9934 16.6918 8.17716 16.0228 7.99137 15.0934L6.32373 6.75317Z"
+        stroke="white"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M6.32364 6.75314L5.51865 3.53016C5.40787 3.08797 5.01048 2.77784 4.55463 2.77783H3.34216M9.30513 20.6667H11.2928M17.2557 20.6667H19.2434"
+        stroke="white"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+    </svg>
+  );
+};
