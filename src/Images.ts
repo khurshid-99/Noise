@@ -16,7 +16,12 @@ import MasterSeriesBanner3 from "@/assets/master_series/master_series_banner3.jp
 import MasterSeriesBanner4 from "@/assets/master_series/master_series_banner4.jpg";
 import MasterSeriesBanner5 from "@/assets/master_series/master_series_banner5.jpg";
 
+import RepCardImg1 from "@/assets/rep/RepCardImage1.png";
+import RepCategory1 from "@/assets/rep/Rep_new.409_result.png";
+
 export {
+  RepCardImg1,
+  RepCategory1,
   MasterSeriesBanner1,
   MasterSeriesBanner2,
   MasterSeriesBanner3,

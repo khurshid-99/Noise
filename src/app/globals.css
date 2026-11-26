@@ -36,6 +36,7 @@
   --font-Ucc: Ucc;
 
   /* FONT SIZE */
+  --text-32: 3.2rem; /* 32px */
   --text-30: 3rem; /* 30px */
   --text-26: 2.6rem; /* 26px */
   --text-22: 2.2rem; /* 22px */
@@ -46,35 +47,76 @@
   --text-13: 1.3rem; /* 13px */
   --text-12-88: 1.288rem; /* 12.88px */
   --text-12: 1.2rem; /* 12px */
+  --text-11: 1.1rem; /* 11px */
   --text-10: 1rem; /* 10px */
 
   /* COLOR */
   --color-white: #ffffff;
   --color-white-2: #ffffff1f;
   --color-black: #000000;
+  --color-black-2: #00000057;
+  --color-black-3: #00000024;
+  --color-black-4: #0000002e;
+  --color-black-5: #000000a3;
+
   --color-green: #107629;
+  --color-green-2: #50ae81;
+  --color-green-3: #e8ffeb;
+
   --color-gray-1: #a7a7a7;
   --color-gray-2: #757575;
-  --color-dark-1: #171717;
-  --color-dark-5: #070707a6;
-  --color-light-gray: #f2f2f2;
-  --color-dark-2: #353535;
   --color-gray-3: #3e3e3e;
-  --color-dark-3: #0f0f0f;
-  --color-dark-4: #050503;
   --color-gray-4: #8c8c8c;
   --color-gray-5: #c9c9c9;
   --color-gray-6: #747474;
+  --color-gray-7: #dddad98a;
+  --color-gray-8: #686868;
+  --color-gray-9: #737373;
+  --color-gray-10: #9e9e9e;
+  --color-gray-11: #dddad9;
+  --color-gray-12: #c8c8c8;
+  --color-gray-13: #d1d1d173;
+
+  --color-dark-1: #171717;
+  --color-dark-2: #353535;
+  --color-dark-3: #0f0f0f;
+  --color-dark-4: #050503;
+  --color-dark-5: #070707a6;
+  --color-dark-6: #171717c2;
+  --color-dark-7: #0a0a0a;
+  --color-dark-8: #282727;
+  --color-dark-9: #111111;
+  --color-dark-10: #17171799;
+
+  --color-light-gray: #f2f2f2;
+
+  --color-gold-1: #f2d08b;
+  --color-gold-2: #caa55a;
+  --color-gold-3: #a08048;
+  --color-gold-4: #f5d196;
+  --color-gold-5: #ffe4b7;
+  --color-gold-6: #e3bf85;
+  --color-gold-7: #9e7d46;
+  --color-gold-8: #f3ce8c;
+  --color-gold-9: #f6d283;
+  --color-gold-10: #5c4300;
+  --color-gold-11: #fff3d8;
+
 
   /* RADIUS */
   --radius-50p: 5rem; /* 50px */
   --radius-20p: 2rem; /* 20px */
   --radius-16p: 1.6rem; /* 16px */
+  --radius-12p: 1.2rem; /* 12px */
   --radius-8p: 0.8rem; /* 8px */
+  --radius-6p: 0.6rem; /* 6.4px */
 
   /* -- */
 
   --spacing-1790p: 179rem; /* 1790px */
+  --spacing-1090p: 109rem; /* 1090px */
+  --spacing-820p: 82rem; /* 820px */
+  --spacing-365p: 36.5rem; /* 365px */
   --spacing-280p: 28rem; /* 280px */
   --spacing-262p: 26.2rem; /* 262px */
   --spacing-260p: 26rem; /* 260px */
@@ -85,23 +127,27 @@
   --spacing-107p: 10.7rem; /* 107px */
   --spacing-96p: 9.6rem; /* 96px */
   --spacing-75p: 7.5rem; /* 75px */
+  --spacing-67p: 6.7rem; /* 67px */
   --spacing-55p: 5.5rem; /* 55px */
   --spacing-52p: 5.2rem; /* 52px */
   --spacing-50p: 5rem; /* 50px */
   --spacing-45p: 4.5rem; /* 45px */
   --spacing-38p: 3.8rem; /* 38px */
+  --spacing-36p: 3.6rem; /* 36px */
   --spacing-35p: 3.5rem; /* 35px */
   --spacing-32p: 3.2rem; /* 32px */
   --spacing-30p: 3rem; /* 30px */
   --spacing-26p: 2.6rem; /* 26px */
   --spacing-25p: 2.5rem; /* 25px */
   --spacing-24p: 2.4rem; /* 24px */
+  --spacing-23p: 2.3rem; /* 23px */
   --spacing-22p: 2.2rem; /* 22px */
   --spacing-20p: 2rem; /* 20px */
   --spacing-19p: 1.9rem; /* 19px */
   --spacing-18p: 1.8rem; /* 18px */
   --spacing-16p: 1.6rem; /* 16px */
   --spacing-14p: 1.4rem; /* 14px */
+  --spacing-13p: 1.3rem; /* 13px */
   --spacing-12p: 1.2rem; /* 12px */
   --spacing-11p: 1.1rem; /* 11px */
   --spacing-10p: 1rem; /* 10px */
@@ -125,16 +171,10 @@
 html,
 body {
   font-size: 10px;
+  font-family: Inter;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   /* width: 5px; */
   display: none;
   /* background: red; */

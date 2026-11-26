@@ -1,23 +1,12 @@
 "use client";
 
-import AccordionItem from "@/client/components/AccordionItem";
-import {
-  ArrowRight,
-  DownArrow,
-  FacebookIcon,
-  InstaIcon,
-  YoutubeIcon,
-} from "@/client/components/Icons";
 import ProductCard from "@/client/components/productCard/ProductCard";
 import RecentProductCard from "@/client/components/recentProductCard/RecentProductCard";
-import { CategoryCardImg1, HomeBanner1, LogoWhite, NoiseX } from "@/Images";
+import { CategoryCardImg1, HomeBanner1, NoiseX } from "@/Images";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Home() {
-  const [isSmartWatchOpen, setIsSmartWatchOpen] = useState(false);
-
   return (
     <main className="w-full bg-white ">
       <header className="w-full px-52p pt-55p ">

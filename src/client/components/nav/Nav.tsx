@@ -334,7 +334,7 @@ const Nav = () => {
           onMouseEnter={() => HandleMegaMenuLeave()}
           className="py-19p px-26p text-14 text-white hover:text-gray-6 font-Inter duration-300 "
         >
-          <Link href={""}>REP</Link>
+          <Link href={"/rep-fitness-tracker"}>REP</Link>
         </li>
         <li
           onMouseEnter={() => HandleMegaMenu("smart-watches")}
@@ -438,7 +438,7 @@ const Nav = () => {
                 </h4>
 
                 <ul>
-                  {links.map(({ title, href }, index) => (
+                  {links.map(({ title }, index) => (
                     <li
                       key={index}
                       className="w-[70%] text-14 text-black py-3p border-b border-black "
@@ -461,7 +461,7 @@ const Nav = () => {
 
           {megaMenuActiveData &&
             megaMenuActiveData.categories.cards.map(
-              ({ image, link }, index) => (
+              ({ image }, index) => (
                 <div
                   key={index}
                   className="w-262p aspect-square rounded-16p overflow-hidden bg-[pink]"
