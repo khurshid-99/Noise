@@ -355,3 +355,135 @@ export const BannerLogo = ({ className }: IconStyle) => {
     </svg>
   );
 };
+
+export const ReplacementIcon = ({ className }: IconStyle) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 17 30"
+      fill="none"
+      className={className}
+    >
+      <g clipPath="url(#clip0_1451_962)">
+        <path
+          d="M13.0301 0.865356L15.2915 3.16792L13.0301 5.47037"
+          stroke="black"
+          strokeWidth="1.44"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M1.71933 14V6.3201C1.71933 5.48448 2.04546 4.68304 2.62584 4.09217C3.20621 3.5013 3.99328 3.16943 4.81404 3.16943H13.8749"
+          stroke="black"
+          strokeWidth="1.44"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M3.98074 27.9398L1.71933 25.6373L3.98074 23.3348"
+          stroke="black"
+          strokeWidth="1.44"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M15.2915 15L15.2915 22.4851C15.2915 23.3207 14.9654 24.1221 14.385 24.713C13.8046 25.3039 13.0176 25.6357 12.1968 25.6357L3.13597 25.6357"
+          stroke="black"
+          strokeWidth="1.44"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M8.18633 18.3875L10.6293 10.3739H5.66666"
+          stroke="#999999"
+          strokeWidth="1.44"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1451_962">
+          <rect width="17" height="30" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const WarrantyIcon = ({ className }: IconStyle) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 27 30"
+      fill="none"
+      className={className}
+    >
+      <g clipPath="url(#clip0_1451_971)">
+        <path
+          d="M11.0315 27.0426H7.35358C4.12517 27.0426 1.5083 24.4258 1.5083 21.1974V7.34529C1.5083 4.11689 4.12517 1.5 7.35358 1.5H17.4241C20.6525 1.5 23.2694 4.11689 23.2694 7.34529V12.1207"
+          stroke="black"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          opacity="0.4"
+          d="M17.5575 22.0837L18.9375 23.4664L21.7821 20.6205M14.7561 18.6396C14.7561 17.7919 15.4428 17.1039 16.2916 17.1027H16.9905C17.3955 17.1027 17.7844 16.9431 18.0727 16.6573L18.561 16.1679C19.1578 15.5656 20.1315 15.5643 20.7324 16.1611L20.7337 16.1625L20.739 16.1679L21.2286 16.656C21.5155 16.9417 21.9045 17.1027 22.3108 17.1027H23.011C23.8587 17.1027 24.5466 17.7906 24.5466 18.6396V19.3371C24.5466 19.7421 24.7075 20.1324 24.9933 20.4193L25.4814 20.9089C26.0836 21.507 26.0877 22.4794 25.4895 23.0815L25.4827 23.0869L24.9933 23.5765C24.7075 23.8648 24.5479 24.2524 24.5479 24.6574V25.3588C24.5466 26.2065 23.8587 26.8932 23.011 26.8918H22.3096C21.9031 26.8918 21.5142 27.0528 21.2272 27.3385L20.7376 27.828C20.1409 28.4302 19.1698 28.4343 18.5664 27.8374L18.565 27.8347L18.5596 27.8293L18.07 27.3411C17.7831 27.0555 17.3941 26.8945 16.9891 26.8945H16.2916C15.4441 26.8945 14.7561 26.2065 14.7561 25.3588V24.6561C14.7561 24.2511 14.5951 23.8635 14.3094 23.5752L13.8213 23.0856C13.219 22.4901 13.2136 21.5178 13.8105 20.9155L13.8132 20.9128L13.8199 20.9076L14.308 20.418C14.5938 20.131 14.7547 19.7421 14.7547 19.3357L14.7561 18.6396Z"
+          stroke="black"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          opacity="0.4"
+          d="M13.3667 9.98438H7.54049M9.91803 16.28H7.53906"
+          stroke="black"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1451_971">
+          <rect width="27" height="30" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const SecurePaymentIcon = ({ className }: IconStyle) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 26 30"
+      fill="none"
+      className={className}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12.5582 28.4604C12.5582 28.4604 23.6949 25.0883 23.6949 15.7921C23.6949 6.49455 24.0985 5.76874 23.2057 4.87455C22.3115 3.98036 14.0185 1.08875 12.5582 1.08875C11.0978 1.08875 2.80478 3.98036 1.91203 4.87455C1.01784 5.76874 1.42139 6.49455 1.42139 15.7921C1.42139 25.0883 12.5582 28.4604 12.5582 28.4604Z"
+        stroke="black"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.78601 14.3342L11.5325 17.085L17.1908 11.4237"
+        stroke="#999999"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PlayIcon = ({className}:IconStyle) => {
+  return (
+    <svg viewBox="0 0 24 24"  className={className}>
+      <path d="M8 5.5v13l11-6.5z" fill="currentColor"></path>
+    </svg>
+  );
+};

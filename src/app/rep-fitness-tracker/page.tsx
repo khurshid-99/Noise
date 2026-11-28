@@ -1,16 +1,68 @@
+"use client";
+import CloserLookCart from "@/client/components/closerLookCart/CloserLookCart";
 import {
-  ArrowRight,
   BannerLogo,
+  ReplacementIcon,
+  SecurePaymentIcon,
   ShortArrowDown,
   ShortArrowRight,
   Sparkling,
   Star,
+  WarrantyIcon,
 } from "@/client/components/Icons";
-import { OfferLogo, RepCategory1 } from "@/Images";
+import MediaCart from "@/client/components/mediaCart/MediaCart";
+import RipSuggestionCart from "@/client/components/ripSuggestionCart/RipSuggestionCart";
+import {
+  OfferLogo,
+  RepBanner1,
+  RepBanner2,
+  RepBanner3,
+  RepBanner4,
+  RepBanner5,
+  RepBanner6,
+  RepCategory1,
+  RepVideoTheme1,
+  RepVideoTheme2,
+  RepVideoTheme3,
+  RepVideoTheme4,
+} from "@/Images";
 import Image from "next/image";
-import React from "react";
+import { useState } from "react";
 
-const page = () => {
+const CloserLookData = [
+  {
+    name: "What's in the box 👀",
+    img: RepVideoTheme1,
+    video: "/rep/rep_video1.mp4",
+  },
+  {
+    name: "Get hyrox ready!",
+    img: RepVideoTheme2,
+    video: "/rep/rep_video2.mp4",
+  },
+  {
+    name: "Track smarter!",
+    img: RepVideoTheme3,
+    video: "/rep/rep_video3.mp4",
+  },
+  {
+    name: "Your next fitness partner",
+    img: RepVideoTheme4,
+    video: "/rep/rep_video4.mp4",
+  },
+];
+
+export default function Rep() {
+  const [isActiveDescription, setIsActiveDescription] = useState<number | null>(
+    null,
+  );
+
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
+
+  const HandleDescription = (index: number) => {
+    setIsActiveDescription((prev) => (prev === index ? null : index));
+  };
+
   return (
     <main>
       <section className="w-full grid grid-cols-[repeat(auto-fit,minmax(820px,1090px))] grid-flow-col relative ">
@@ -288,7 +340,7 @@ const page = () => {
                 name=""
                 id=""
                 placeholder="Enter pincode for delivery date"
-                className="w-full h-full text-13 text-black placeholder:text-black-4 "
+                className="w-full h-full text-13 text-black placeholder:text-black-4 outline-none "
               />
               <button className="px-18p py-10p rounded-8p text-13 text-white bg-dark-7 cursor-pointer ">
                 Check
@@ -315,30 +367,161 @@ const page = () => {
             </div>
           </div>
           {/*  */}
-          <div>
-            <div>
-              <button>Description</button>
-              <div></div>
+          <div className="flex flex-col gap-12p ">
+            <div className="px-16p  border border-gray-14 rounded-12p">
+              <button
+                onClick={() => HandleDescription(1)}
+                className="w-full flex items-center justify-between text-14 text-dark-1 font-semibold py-18p bg-white cursor-pointer "
+              >
+                <span>Description</span>
+                <span
+                  className={`duration-300 ${isActiveDescription === 1 ? "rotate-180" : "rotate-0"}`}
+                >
+                  <ShortArrowDown className="w-20p aspect-square " />
+                </span>
+              </button>
+
+              <div
+                className={`grid transition-all duration-300 ${isActiveDescription === 1 ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+              >
+                <div className="overflow-hidden ">
+                  <div className="pb-16p ">
+                    <p className=" text-14 text-gray-8 ">
+                      Your body sends signals all day, whether you're paying
+                      attention or not. The Noise REP Band reads them
+                      continuously, turning sleep, recovery, and strain into a
+                      clear signal on how hard to push. At 27g with a 10-day
+                      battery, it stays on through training, travel, and sleep.
+                      No screen. No subscription. Just your data, yours from day
+                      1. Better performance starts now.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            {/*  */}
+            <div className="px-16p  border border-gray-14 rounded-12p">
+              <button
+                onClick={() => HandleDescription(2)}
+                className="w-full flex items-center justify-between text-14 text-dark-1 font-semibold py-18p bg-white cursor-pointer "
+              >
+                <span>Key Features</span>
+                <span
+                  className={` duration-300 ${isActiveDescription ? "rotate-180 " : "rotate-0"} `}
+                >
+                  <ShortArrowDown className="w-20p aspect-square " />
+                </span>
+              </button>
+
+              <div
+                className={`grid transition-all duration-300 ${isActiveDescription === 2 ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+              >
+                <div className="overflow-hidden ">
+                  <div className="pb-16p ">
+                    <ul className="pl-20p list-disc marker:text-black marker:tabular-nums flex flex-col gap-4p ">
+                      <li
+                        className="
+                        text-14 text-black "
+                      >
+                        <strong>Sleep, Recovery, Effort: </strong>
+                        Three scores, tracked daily. Sleep tells you how you
+                        rested. Recovery tells you how ready you are. Effort
+                        tells you how hard you worked.
+                      </li>
+                      <li className="text-14 text-black ">
+                        <strong>Up to 10 days of Battery Life: </strong>
+                        One charge lasts up to 10 days, through training,
+                        travel, and every night of sleep tracking. No mid-week
+                        charging required.
+                      </li>
+                      <li className="text-14 text-black ">
+                        <strong>Reference-Grade Sensors:</strong>
+                        Calibrated across Indian skin tones, built to read your
+                        body&rsquo;s signals accurately, day and night.
+                      </li>
+                      <li className="text-14 text-black ">
+                        <strong>20+ workout modes : </strong>
+                        Supports 20+ workout modes, with Auto-Workout Detection
+                        available for Walking, Running, Cycling, Elliptical and
+                        Rowing.
+                      </li>
+                      <li className="text-14 text-black ">
+                        <strong>No Subscription, No Screen: </strong>
+                        Every score, every insight, unlocked from day one. No
+                        monthly fee. No display to distract you from the work.
+                      </li>
+                      <li className="text-14 text-black ">
+                        <strong>27g, 5ATM Water Resistant:</strong>
+                        Light enough to sit comfortably on your wrist. Rated for
+                        the pool, the shower, and everything in between.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*  */}
+            <div className="px-16p  border border-gray-14 rounded-12p">
+              <button
+                onClick={() => HandleDescription(3)}
+                className="w-full flex items-center justify-between text-14 text-dark-1 font-semibold py-18p bg-white cursor-pointer "
+              >
+                <span>Specifications</span>
+                <span
+                  className={` duration-300 ${isActiveDescription === 3 ? "rotate-180 " : "rotate-0"} `}
+                >
+                  <ShortArrowDown className="w-20p aspect-square " />
+                </span>
+              </button>
+
+              <div
+                className={`grid transition-all duration-300 ${isActiveDescription === 3 ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+              >
+                <div className="overflow-hidden ">
+                  <div className="pb-16p  ">
+                    <ul className="pl-20p list-disc marker:text-black marker:tabular-nums flex flex-col gap-4p ">
+                      <li className="text-14 text-black ">
+                        Battery Life: Up to 10 days per charge
+                      </li>
+                      <li className="text-14 text-black ">
+                        Charging Type: Magnetic charging dock
+                      </li>
+                      <li className="text-14 text-black ">
+                        Subscription Required: No
+                      </li>
+                      <li className="text-14 text-black ">
+                        Sensor Array: PPG optical sensor + IMU (accelerometer +
+                        gyroscope)
+                      </li>
+                      <li className="text-14 text-black ">
+                        Score System: Sleep, Recovery, Effort
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*  */}
           </div>
           {/*  */}
-          <div>
-            <div>
-              <Image src={""} alt="" />
-              <p>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(186px,1fr))] justify-center ">
+            <div className="flex flex-col items-center gap-20p ">
+              <ReplacementIcon className="w-36p aspect-square " />
+
+              <p className="text-14 text-dark-11 font-bold text-center ">
                 7 day <br /> replacement
               </p>
             </div>
-            <div>
-              <Image src={""} alt="" />
-              <p>
+            <div className="flex flex-col items-center gap-20p ">
+              <WarrantyIcon className="w-36p aspect-square " />
+              <p className="text-14 text-dark-11 font-bold text-center ">
                 1 year <br />
                 warranty
               </p>
             </div>
-            <div>
-              <Image src={""} alt="" />
-              <p>
+            <div className="flex flex-col items-center gap-20p ">
+              <SecurePaymentIcon className="w-36p aspect-square " />
+              <p className="text-14 text-dark-11 font-bold text-center ">
                 Secure <br />
                 payment
               </p>
@@ -346,13 +529,228 @@ const page = () => {
           </div>
           {/*  */}
           <div>
-            <p>Recently viewed</p>
-            <div></div>
+            <p className="text-16 text-gray-8 font-medium ">Recently viewed</p>
+            <div className="flex items-center gap-8p ">
+              <RipSuggestionCart />
+              <RipSuggestionCart />
+              <RipSuggestionCart />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*  */}
+      <section className="relative ">
+        <div className="sticky top-0 p-15p z-999 bg-white ">
+          <ul className="flex items-center gap-80p ">
+            <li
+              className="relative text-20 text-dark-12 font-bold 
+              before:content-['']
+              before:absolute
+              before:top-full
+              before:left-1/2
+              before:w-full
+              before:h-4p
+              before:pointer-events-none
+              before:border-b
+              before:border-transparent
+              before:-translate-x-1/2
+              before:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#a0804880_-4.91%,#f5d19680_21.21%,#e3bf8580_84.94%,#9e7d4680_102.51%)_border-box]
+            "
+            >
+              Overview
+            </li>
+            <li
+              className="relative text-20 text-dark-12 font-bold 
+              before:content-['']
+              before:absolute
+              before:top-full
+              before:left-1/2
+              before:w-full
+              before:h-4p
+              before:pointer-events-none
+              before:border-b
+              before:border-transparent
+              before:-translate-x-1/2
+              before:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#a0804880_-4.91%,#f5d19680_21.21%,#e3bf8580_84.94%,#9e7d4680_102.51%)_border-box]
+            "
+            >
+              Specs
+            </li>
+            <li
+              className="relative text-20 text-dark-12 font-bold 
+              before:content-['']
+              before:absolute
+              before:top-full
+              before:left-1/2
+              before:w-full
+              before:h-4p
+              before:pointer-events-none
+              before:border-b
+              before:border-transparent
+              before:-translate-x-1/2
+              before:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#a0804880_-4.91%,#f5d19680_21.21%,#e3bf8580_84.94%,#9e7d4680_102.51%)_border-box]
+            "
+            >
+              Review
+            </li>
+            <li
+              className="relative text-20 text-dark-12 font-bold 
+              before:content-['']
+              before:absolute
+              before:top-full
+              before:left-1/2
+              before:w-full
+              before:h-4p
+              before:pointer-events-none
+              before:border-b
+              before:border-transparent
+              before:-translate-x-1/2
+              before:[background:linear-gradient(#fff,#fff)_padding-box,linear-gradient(90deg,#a0804880_-4.91%,#f5d19680_21.21%,#e3bf8580_84.94%,#9e7d4680_102.51%)_border-box]
+            "
+            >
+              FAQ
+            </li>
+          </ul>
+        </div>
+        {/*  */}
+        <div className="bg-black pt-60p pb-40p ">
+          <div className="max-w-1520p mx-auto px-[clamp(24px,4vw,64px)] ">
+            <h1 className="text-36 text-white font-black uppercase ">
+              TAKE A CLOSER LOOK
+            </h1>
+            <div className="grid grid-cols-[repeat(4,minmax(0,300px))] gap-x-[clamp(20px,2.5vw,40px)] justify-between pt-10p ">
+              {CloserLookData.map(({ name, img, video }, index) => (
+                <CloserLookCart
+                  key={name}
+                  title={name}
+                  img={img}
+                  video={video}
+                  isPlay={playingIndex === index}
+                  isDimmed={playingIndex !== null && playingIndex !== index}
+                  setIsPlay={(value) => setPlayingIndex(value ? index : null)}
+                />
+              ))}
+              {/*  */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*  */}
+      <section className="relative bg-black py-64p ">
+        <div className="max-w-1150p mx-auto  ">
+          <h1 className="text-36 text-white font-semibold uppercase   ">
+            IN THE MEDIA
+          </h1>
+          <div className="flex items-center justify-between  gap-20p pt-30p ">
+            <MediaCart
+              title="The Time Of India"
+              description="with no display lighting up or notifications appearing on the wrist, the REP Band stay focused on quiety colleting the data"
+              powerBy="The Times of India"
+              titleStyle="bg-[red]  text-36  text-white font-Ucc uppercase "
+            />
+            <MediaCart
+              title="money control"
+              description="with no display lighting up or notifications appearing on the wrist, the REP Band stay focused on quiety colleting the data"
+              powerBy="The Times of India"
+              titleStyle=" bg-green text-26 text-white  font-bold lowercase "
+            />
+            <MediaCart
+              title="India today"
+              description="with no display lighting up or notifications appearing on the wrist, the REP Band stay focused on quiety colleting the data"
+              powerBy="The Times of India"
+              titleStyle=" text-36 text-[red] font-Pxi font-black uppercase"
+            />
+          </div>
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="w-full aspect-1920/1224 ">
+          <Image
+            src={RepBanner1}
+            alt=""
+            className="w-full object-center object-cover "
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="w-full aspect-1920/940 ">
+          <Image
+            src={RepBanner2}
+            alt=""
+            className="w-full object-center object-cover "
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="w-full aspect-1920/2066 ">
+          <Image
+            src={RepBanner3}
+            alt=""
+            className="w-full object-center object-cover "
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="w-full aspect-1920/1180 ">
+          <Image
+            src={RepBanner4}
+            alt=""
+            className="w-full object-center object-cover "
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="w-full aspect-1920/2330 ">
+          <Image
+            src={RepBanner5}
+            alt=""
+            className="w-full object-center object-cover "
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="w-full aspect-1920/4260 ">
+          <Image
+            src={RepBanner6}
+            alt=""
+            className="w-full object-center object-cover "
+          />
+        </div>
+      </section>
+      {/*  */}
+      <section>
+        <div className="max-w-1008p mx-auto ">
+          <div className="p-32p ">
+            <h2 className="text-24 text-dark-1 font-semibold ">
+              Specifications
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-y-24p gap-x-100p pt-24p pl-10p ">
+            <p className="text-16 text-dark-1 font-normal font-features-['liga'_off,'clig'_off]  ">
+              Country of origin : <span className="text-gray-8 "> P.R.C.</span>
+            </p>
+            <p className="text-16 text-dark-1 font-normal font-features-['liga'_off,'clig'_off]  ">
+              Marketed and Imported by:{" "}
+              <span className="text-gray-8 ">
+                Nexxbase Marketing Pvt. Ltd, Gurugram, Haryana
+              </span>
+            </p>
+            <p className="text-16 text-dark-1 font-normal font-features-['liga'_off,'clig'_off]  ">
+              Package Contains:{" "}
+              <span className="text-gray-8 ">
+                1 Noise REP Band, 1 magnetic charging dock, 1 user manual, 1
+                warranty card
+              </span>
+            </p>
           </div>
         </div>
       </section>
     </main>
   );
-};
-
-export default page;
+}

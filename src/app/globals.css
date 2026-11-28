@@ -30,16 +30,19 @@
 }
 
 @theme {
-  --font-Inter: Inter;
+  --font-Inter: Inter, sans-serif;
   --font-Pxi: Pxi;
   --font-Site: Site;
   --font-Ucc: Ucc;
 
   /* FONT SIZE */
+  --text-36: 3.6rem; /* 36px */
   --text-32: 3.2rem; /* 32px */
   --text-30: 3rem; /* 30px */
   --text-26: 2.6rem; /* 26px */
+  --text-24: 2.4rem; /* 24px */
   --text-22: 2.2rem; /* 22px */
+  --text-20: 2rem; /* 20px */
   --text-18: 1.8rem; /* 18px */
   --text-16: 1.6rem; /* 16px */
   --text-14: 1.4rem; /* 14px */
@@ -58,6 +61,7 @@
   --color-black-3: #00000024;
   --color-black-4: #0000002e;
   --color-black-5: #000000a3;
+  --color-black-6: #0000001a;
 
   --color-green: #107629;
   --color-green-2: #50ae81;
@@ -76,6 +80,8 @@
   --color-gray-11: #dddad9;
   --color-gray-12: #c8c8c8;
   --color-gray-13: #d1d1d173;
+  --color-gray-14: #ebebeb;
+  --color-gray-15: #979797;
 
   --color-dark-1: #171717;
   --color-dark-2: #353535;
@@ -87,6 +93,8 @@
   --color-dark-8: #282727;
   --color-dark-9: #111111;
   --color-dark-10: #17171799;
+  --color-dark-11: #121212;
+  --color-dark-12: #333333;
 
   --color-light-gray: #f2f2f2;
 
@@ -102,7 +110,6 @@
   --color-gold-10: #5c4300;
   --color-gold-11: #fff3d8;
 
-
   /* RADIUS */
   --radius-50p: 5rem; /* 50px */
   --radius-20p: 2rem; /* 20px */
@@ -114,24 +121,39 @@
   /* -- */
 
   --spacing-1790p: 179rem; /* 1790px */
+  --spacing-1520p: 152rem; /* 1520px */
+  --spacing-1150p: 115rem; /* 1150px */
   --spacing-1090p: 109rem; /* 1090px */
+  --spacing-1008p: 100.8rem; /* 1008px */
   --spacing-820p: 82rem; /* 820px */
+  --spacing-530p: 53rem; /* 530px */
   --spacing-365p: 36.5rem; /* 365px */
+  --spacing-360p: 36rem; /* 360px */
+  --spacing-352p: 35.2rem; /* 352px */
+  --spacing-300p: 30rem; /* 300px */
   --spacing-280p: 28rem; /* 280px */
   --spacing-262p: 26.2rem; /* 262px */
   --spacing-260p: 26rem; /* 260px */
+  --spacing-180p: 18rem; /* 180px */
   --spacing-162p: 16.2rem; /* 162px */
+  --spacing-146p: 14.6rem; /* 146px */
   --spacing-130p: 13rem; /* 130px */
   --spacing-120p: 12rem; /* 120px */
   --spacing-115p: 11.5rem; /* 115px */
   --spacing-107p: 10.7rem; /* 107px */
+  --spacing-100p: 10rem; /* 100px */
   --spacing-96p: 9.6rem; /* 96px */
+  --spacing-90p: 9rem; /* 90px */
+  --spacing-80p: 8rem; /* 80px */
   --spacing-75p: 7.5rem; /* 75px */
   --spacing-67p: 6.7rem; /* 67px */
+  --spacing-64p: 6.4rem; /* 64px */
+  --spacing-60p: 6rem; /* 60px */
   --spacing-55p: 5.5rem; /* 55px */
   --spacing-52p: 5.2rem; /* 52px */
   --spacing-50p: 5rem; /* 50px */
   --spacing-45p: 4.5rem; /* 45px */
+  --spacing-40p: 4rem; /* 40px */
   --spacing-38p: 3.8rem; /* 38px */
   --spacing-36p: 3.6rem; /* 36px */
   --spacing-35p: 3.5rem; /* 35px */
@@ -146,6 +168,7 @@
   --spacing-19p: 1.9rem; /* 19px */
   --spacing-18p: 1.8rem; /* 18px */
   --spacing-16p: 1.6rem; /* 16px */
+  --spacing-15p: 1.5rem; /* 15px */
   --spacing-14p: 1.4rem; /* 14px */
   --spacing-13p: 1.3rem; /* 13px */
   --spacing-12p: 1.2rem; /* 12px */
